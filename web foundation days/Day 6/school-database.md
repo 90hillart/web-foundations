@@ -59,7 +59,7 @@ I would add an index on `enrolments(course_id)` to speed up queries that retriev
 
 Example:
 
-```sql
+
 CREATE INDEX idx_enrolments_course_id
 ON enrolments(course_id);
 ```
