@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Day 5 - User Directory</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="users.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>User Directory</h1>
+    <p>Fetch, view, and filter users from a REST API.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="users-heading">
+      <h2 id="users-heading">Users</h2>
+
+      <button type="button" id="load-users">
+        Load Users
+      </button>
+
+      <label for="filter-input">Filter users by name</label>
+      <input
+        type="search"
+        id="filter-input"
+        placeholder="Type a user's name..."
+        autocomplete="off"
+      >
+
+      <p id="status" role="status" aria-live="polite">
+        Click "Load Users" to retrieve users.
+      </p>
+
+      <ul id="users-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Day 5 Web Foundations</p>
+  </footer>
+</body>
+</html>
+

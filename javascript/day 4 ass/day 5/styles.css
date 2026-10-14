@@ -1,0 +1,121 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f2f5f7;
+  color: #222;
+}
+
+header {
+  padding: 28px 16px;
+  text-align: center;
+  color: white;
+  background: #176b87;
+}
+
+header h1,
+header p {
+  margin: 0;
+}
+
+main {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+section {
+  padding: 24px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #00000012;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 18px 0 6px;
+  font-weight: bold;
+}
+
+input[type="search"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font: inherit;
+}
+
+button {
+  padding: 11px 16px;
+  color: white;
+  background: #176b87;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0e4f65;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+#status {
+  min-height: 24px;
+  overflow-wrap: anywhere;
+}
+
+#users-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.user-card {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-left: 5px solid #176b87;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+  background: #fafafa;
+}
+
+.user-card h3 {
+  margin-top: 0;
+}
+
+.user-card p {
+  margin-bottom: 6px;
+}
+
+footer {
+  padding: 16px;
+  text-align: center;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  section {
+    padding: 16px;
+  }
+}
+
