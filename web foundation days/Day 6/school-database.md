@@ -26,6 +26,7 @@ The `courses` table stores information about available courses.
 - `course_name`: The course's name; required.
 - `description`: A description of the course, which is optional.
 
+
 ### Enrolments
 
 The `enrolments` table records which student is taking which course.
